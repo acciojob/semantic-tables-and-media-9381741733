@@ -3,53 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>List medias</title>
+  <title>List of Media</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    img, video, audio {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-  <!-- Semantic Table -->
-  <table>
-    <thead>
-      <tr>
-        <th>Roll numbers</th>
-        <th>Names</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Alice</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Bob</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Charlie</td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Semantic Table Section -->
+  <section>
+    
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Roll numbers</th>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alice</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bob</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Charlie</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-  <!-- Heading between Table and Ordered List -->
-  <h1>List of medias</h1>
-
-  <!-- Ordered List with Media Items -->
-  <ol>
-    <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Image from Picsum with ID 123">
-    </li>
-    <li>
-      <video controls>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-        Your browser does not support the video element.
-      </video>
-    </li>
-    <li>
-      <audio controls>
-        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
-        Your browser does not support the audio element.
-      </audio>
-    </li>
-  </ol>
+  <!-- Media Section -->
+  <section>
+    <h1>List of medias</h1>
+    <ol>
+      <li>
+        <img src="https://picsum.photos/id/123/200/300" alt="Random placeholder image with ID 123">
+      </li>
+      <li>
+        <video controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+          <p>Your browser does not support the video element.</p>
+        </video>
+      </li>
+      <li>
+        <audio controls>
+          <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+          <p>Your browser does not support the audio element.</p>
+        </audio>
+      </li>
+    </ol>
+  </section>
 </body>
 </html>
